@@ -1,0 +1,73 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link d-flex align-items-center justify-content-center">
+        <!--<img src="{{ url_for('static', filename='assets/img/core-img/espe-logo.png') }}" class="brand-image brand-text" alt="ESPE Logo">-->
+        <img src="{{ url_for('static', filename='assets/img/core-img/espe.webp') }}" class="brand-image brand-text" alt="ESPE Logo">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <p>
+                            <span class="ml-1">Acceso</span>
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/users" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Usuarios</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/roles" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Roles</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/permissions" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Permisos</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/classrooms" class="nav-link">
+                        <i class="nav-icon fas fa-school"></i>
+                        <p>Aulas</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/students" class="nav-link">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>Estudiantes</p>
+                    </a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>Simple Link</p>
+                    </a>
+                </li>-->
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
